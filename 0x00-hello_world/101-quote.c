@@ -5,7 +5,7 @@
  *
  * Description: this is a c program to print a statment using write function
  *
- * return: 1 (not success)
+ * Return: 1 (error).
  *
 */
 
