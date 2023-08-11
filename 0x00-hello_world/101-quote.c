@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-/*
+/**
  * main - Entry point
  *
  * Description: this is a c program to print a statment using write function
