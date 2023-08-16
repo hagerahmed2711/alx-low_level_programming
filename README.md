@@ -1,1 +1,1 @@
-for learning C
+read me
