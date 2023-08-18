@@ -9,17 +9,17 @@
 
 void print_triangle(int size)
 {
-	int row, column;
+	int high, base;
 
 	if (size <= 0)
 		_putchar('\n');
 	else
 	{
-		for (row = 1; row <= size; row++)
+		for (high = 1; high <= size; high++)
 		{
-			for (column = 1; column < size; column++)
+			for (base = 1; base <= size; base++)
 			{
-				if ((row + column) <= size)
+				if ((high + base) <= size)
 					_putchar(' ');
 				else
 					_putchar('#');
