@@ -6,9 +6,7 @@
  *
  * @str: the given string.
  *
- * Return: NULL if str = NULL
-On success, the _strdup function returns a pointer to the duplicated string.
-It returns NULL if insufficient memory was available
+ * Return: NULL if str = NULL or returns a pointer to the duplicated string.
  *
  *
 */
