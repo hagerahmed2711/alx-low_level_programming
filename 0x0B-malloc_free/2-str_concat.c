@@ -20,11 +20,11 @@ char *str_concat(char *s1, char *s2)
 		s1 = '\0';
 	if (s2 == NULL)
 		s2 = '\0';
-	while (s1[size1] != '\0')
-		size1++;
-	while (s2[size2] != '\0')
-		size2++;
-	newString = malloc((size1 * sizeof(char)) + (size2 * sizeof(char)) + 1);
+	for (; s1[size1] != '\0'; size1++)
+	;
+	for (; s2[size2] != '\0'; size2++)
+	;
+	newString = malloc((size1 + size2) * sizeof(char) + 1);
 	if (newString == 0)
 		return (0);
 	for (i = 0; i <= size1 + size2; i++)
