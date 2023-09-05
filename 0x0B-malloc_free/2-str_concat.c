@@ -25,10 +25,15 @@ char *str_concat(char *s1, char *s2)
 	while (s2[size2] != '\0')
 		size2++;
 	newString = malloc((size1 * sizeof(char)) + (size2 * sizeof(char)) + 1);
-	for (i = 0; i < size1; i++)
-		newString[i] = s1[i];
-	for (i = size1; i < (size1 + size2); i++)
-		newString[i] = s2[i - size1];
+	if (newString == 0)
+		return (0);
+	for (i = 0; i <= size1 + size2; i++)
+	{
+		if (i < size1)
+			newString[i] = s1[i];
+		else
+			newString[i] = s2[i - size2];
+	}
 	newString[i] = '\0';
 	return (newString);
 }
