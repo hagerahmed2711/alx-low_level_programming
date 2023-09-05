@@ -32,7 +32,7 @@ char *str_concat(char *s1, char *s2)
 		if (i < size1)
 			newString[i] = s1[i];
 		else
-			newString[i] = s2[i - size2];
+			newString[i] = s2[i - size1];
 	}
 	newString[i] = '\0';
 	return (newString);
