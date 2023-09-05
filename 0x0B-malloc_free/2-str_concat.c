@@ -9,7 +9,14 @@
  * Return: apointer to the new string or NULL on failure.
  *
 */
+int strLen(char *s)
+{
+	int size = 0;
 
+	for (; s[size] != '\0'; size++)
+	;
+	return size;
+}
 
 char *str_concat(char *s1, char *s2)
 {
@@ -20,10 +27,8 @@ char *str_concat(char *s1, char *s2)
 		s1 = '\0';
 	if (s2 == NULL)
 		s2 = '\0';
-	for (; s1[size1] != '\0'; size1++)
-	;
-	for (; s2[size2] != '\0'; size2++)
-	;
+	size1 = strLen(s1);
+	size2 = strLen(s2);
 	newString = malloc((size1 + size2) * sizeof(char) + 1);
 	if (newString == 0)
 		return (0);
