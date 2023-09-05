@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
- * str_concat - concatenates two strings.
+ * strLen - return string size.
  *
- * @s1: the first input string
- * @s2: the second input string
+ * @s: the first input string
  *
- * Return: apointer to the new string or NULL on failure.
+ * Return: string size.
  *
 */
 int strLen(char *s)
@@ -15,8 +14,18 @@ int strLen(char *s)
 
 	for (; s[size] != '\0'; size++)
 	;
-	return size;
+	return (size);
 }
+/**
+ * str_concat - concatenates two strings.
+ *
+ * @s1: the first input string
+ * @s2: the second input string
+ *
+ * Return: apointer to the new string or NULL on failure.
+ *
+*/
+
 
 char *str_concat(char *s1, char *s2)
 {
