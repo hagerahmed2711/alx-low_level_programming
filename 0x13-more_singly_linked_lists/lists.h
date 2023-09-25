@@ -6,15 +6,15 @@
 
 /**
  * struct listint_s - singly linked list
- * @num: an integer
+ * @n: an integer
  * @next: points to the next node
  *
  * Description: singly linked list node structure
  */
 typedef struct listint_s
 {
-    int num;
-    struct listint_s *next;
+	int n;
+	struct listint_s *next;
 } listint_t;
 
 size_t print_listint(const listint_t *h);
